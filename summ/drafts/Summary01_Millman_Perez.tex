@@ -1,0 +1,109 @@
+\documentclass{report}
+% PACKAGES %
+\usepackage[english]{} % Sets the language
+\usepackage[margin=2cm]{geometry} % Sets the margin size
+\usepackage{fancyhdr} % Allows creation of headers
+\usepackage{xcolor} % Allows the use of color in text
+\usepackage{float} % Allows figures and tables to be floats
+\usepackage{appendix}
+\usepackage{amsmath} % Enhanced math package prepared by the American Mathematical Society
+	\DeclareMathOperator{\sech}{sech} % Include sech
+\usepackage{amssymb} % AMS symbols package
+\usepackage{mathrsfs}% More math symbols
+\usepackage{bm} % Allows you to use \bm{} to make any symbol bold
+\usepackage{bbold} % Allows more bold characters
+\usepackage{verbatim} % Allows you to include code snippets
+\usepackage{setspace} % Allows you to change the spacing between lines at different points in the document
+\usepackage{parskip} % Allows you alter the spacing between paragraphs
+\usepackage{multicol} % Allows text division into multiple columns
+\usepackage{units} % Allows fractions to be expressed diagonally instead of vertically
+\usepackage{booktabs,multirow,multirow} % Gives extra table functionality
+\usepackage{hyperref} % Allows hyperlinks in the document
+\usepackage{rotating} % Allows tables to be rotated
+\usepackage{graphicx} % Enhanced package for including graphics/figures
+	% Set path to figure image files
+	%\graphicspath{ } }
+\usepackage{listings} % for including text files
+	\lstset{basicstyle=\ttfamily\scriptsize,
+        		  keywordstyle=\color{blue}\ttfamily,
+        	  	  stringstyle=\color{red}\ttfamily,
+          	  commentstyle=\color{gray}\ttfamily,
+          	 }		
+\newcommand{\tab}{\-\hspace{1cm}}
+
+% Create a header w/ Name & Date
+\pagestyle{fancy}
+\rhead{\textbf{Mitch Negus} \; 9/1/2017}
+
+\begin{document}
+\thispagestyle{empty}
+\sffamily
+
+\large {STAT259 Summary {1} \hfill Mitch Negus\\
+		\hspace*{\fill} 9/7/2017\\ }
+\section*{\textsf{Developing open source scientific practice \\ \normalsize Millman, K. and Perez F.}}
+
+--COMPUTATIONAL SCIENCE--\\
+\-\\
+REPRODUCIBLE SCIENCE\\
+- for good science, it must be reproducible\\
+- open source software community has developed this framework/workflow\\
+- though feasibility of reproduction may be limited, the possibility of reproduction must be demanded\\
+\-\\
+\-\\
+LIFE CYCLE\\
+*individual\\
+*collaboration\\
+*production\\
+*publication\\
+*education\\
+\-\\
+-Most common tools create discontinuities across stages of workflow\\
+-Results are considered separate from process, rather than a unified science product\\
+-Joining tools and stages requires both technical and social changes\\
+\-\\
+Reproducibility must be a commitment from the start\\
+\-\\
+\-\\
+OPEN SOURCE\\
+-moving science forward requires computational literacy--> science is open source --> contributing to science will require open source practices\\
+challenges exist with making science fully open source (author recognition, first to publish, etc.)\\
+\-\\
+\-\\
+\-\\
+--PRACTICE--\\
+\-\\
+VERSION CONTROL\\
+-files stored in repositories, require commits (w/ message)\\
+-allow branching and merging\\
+-modern systems allow data integrity verification (cryptographically fingerprinting)\\
+-also limited when dealing w/ large binary files (solutions being developed in this regard)\\ 
+\-\\
+AUTOMATED EXECUTION\\
+-reproducibility should extend to process; best to automate all steps when possible
+-still should be able to be understood by people\\
+-make files facilitate this process\\
+\-\\
+TESTING
+-testing should accompany product development (test-driven-design)
+-allows focus on use (rather than details)
+-TDD prevents "getting lost" in tangled code web
+\-\\
+READABILITY\\
+-you and others will read your code (esp. to verify results)\\
+-self-doc code reduces external documentation by being clear and forward\\
+-use the right level of abstraction when writing mathematical expressions (don't simply too much, but don't avoid it entirely)\\
+-comments may be uncoupled from code (one changes, the other is not updated)\\
+-use of docstrings allows coupling of docs to code--> then autogeneration for web\\
+\-\\
+INFRASTRUCTURE\\
+-hosted version control allows group collaboration\\
+-continuous integration to automatically execute test-suite\\
+\-\\
+PULL REQUEST\\
+-pull request akin to peer review\\
+-anyone can chime in, lasting document of decisions\\
+-private branches (maintain credit, history, and privacy while allowing transparency after integration\\
+
+-linear algebra book by Rob Beezer (U. Puget Sound)
+\end{document}
