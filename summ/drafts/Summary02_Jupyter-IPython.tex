@@ -1,0 +1,94 @@
+\documentclass{report}
+% PACKAGES %
+\usepackage[english]{} % Sets the language
+\usepackage[margin=2cm]{geometry} % Sets the margin size
+\usepackage{fancyhdr} % Allows creation of headers
+\usepackage{xcolor} % Allows the use of color in text
+\usepackage{float} % Allows figures and tables to be floats
+\usepackage{appendix}
+\usepackage{amsmath} % Enhanced math package prepared by the American Mathematical Society
+	\DeclareMathOperator{\sech}{sech} % Include sech
+\usepackage{amssymb} % AMS symbols package
+\usepackage{mathrsfs}% More math symbols
+\usepackage{bm} % Allows you to use \bm{} to make any symbol bold
+\usepackage{bbold} % Allows more bold characters
+\usepackage{verbatim} % Allows you to include code snippets
+\usepackage{setspace} % Allows you to change the spacing between lines at different points in the document
+\usepackage{parskip} % Allows you alter the spacing between paragraphs
+\usepackage{multicol} % Allows text division into multiple columns
+\usepackage{units} % Allows fractions to be expressed diagonally instead of vertically
+\usepackage{booktabs,multirow,multirow} % Gives extra table functionality
+\usepackage{hyperref} % Allows hyperlinks in the document
+\usepackage{rotating} % Allows tables to be rotated
+\usepackage{graphicx} % Enhanced package for including graphics/figures
+	% Set path to figure image files
+	%\graphicspath{ } }
+\usepackage{listings} % for including text files
+	\lstset{basicstyle=\ttfamily\scriptsize,
+        		  keywordstyle=\color{blue}\ttfamily,
+        	  	  stringstyle=\color{red}\ttfamily,
+          	  commentstyle=\color{gray}\ttfamily,
+          	 }		
+\newcommand{\tab}{\-\hspace{1cm}}
+
+% Create a header w/ Name & Date
+\pagestyle{fancy}
+\rhead{\textbf{Mitch Negus} \; 9/14/2017}
+
+\begin{document}
+\thispagestyle{empty}
+\sffamily
+
+\large {STAT259 Summary {2} \hfill Mitch Negus\\
+		\hspace*{\fill} 9/14/2017\\ }
+\section*{\textsf{IPython: A System for Interactive Scientific Computing \\ \normalsize P\'erez F. and Granger B.}}
+\section*{\textsf{Python: An Ecosystem for Scientific Computing \\ \normalsize P\'erez F., Granger B., and Hunter J.}}
+\section*{\textsf{Jupyter Notebooks--a publishing format for reproducible computational workflows \\ \normalsize The Jupyter Development Team,} \small \textit{et al.}}
+
+\textbf{Summary}\\
+This week's readings focus on three evolutions of python and their merits as tools for scientific computation. First, the Python language itself is presented as an invaluable tool for scientific computing. With its tremendous versatility, it can be optimized for a variety of applications (fast calculations, symbolic manipulations, data visualization), while also serving as an intuitive scripting language. Moreover, it is open source, which allow it to fit the scientific ideals of transparency and reproducibility. Another article discusses the IPython project and its features further improving on Python's flexibility, now allowing a more robust interactive working environment. IPython introduces features that are tremendously useful for a scientific workflow, such as access to previous state histories, command line interfacing, and parallelization capabilities. Finally, the third article covers Jupyter notebooks, a more recent development built off the IPython project. These notebooks extend Python's use in the scientific computing community even further. Jupyter notebooks allow prose to be interspersed with code, giving authors far more tools to reach users and anyone reviewing the published code. At the same time, Jupyter notebooks are designed on JSON formats and can be displayed in HTML, allowing them to be run both locally and remotely through a web browser.
+
+\-\\
+\textbf{Exploration}\\
+I had several reactions while reading this week's articles. First, I was interested to read a more accessible history and broad overview of the Python language. The presentation in the 2011 article was a distinctly different perspective than I had encountered as a Python user just reading documentation on the subject. While reading the article on IPython, I became curious about how many new features IPython have that keep it more useful for interactivity. Some of the features mentioned, such as tab completion and access to previously saved states, seem to now be incorporated into the prepackaged Python interpreter. I imagine that magic commands and parallelization capabilities may still be unique to IPython, but I am curious to know if more distinguishing features have been added in the decade since the IPython article's publishing.
+
+\newpage
+
+\textbf{Notes}\\
+
+-----Python-----\\
+-can function standalone\\
+-its value becomes apparent as a wrapper for other codes\\
+-allows easy interface with web/databases\\
+-emerged as historical trend of excess labor compared to compute resources shifted\\
+-python is ideal for scientific collaboration as it also adheres to free, OS ideals\\
+\-\\
+STRUCTURE\\
+-python is a general purpose language\\
+-rich variety of types\\
+-clear and concise syntax\\
+-diverse third-party libraries afford versatility to optimize\\
+-open source means that though portability may suffer, it is not insurmountable (python is free, just run mult. versions)\\
+\-\\
+\-\\
+\-\\
+-----IPython-----\\
+-interactivity*\\
+-tab completion*\\
+-access to previously saved states*\\
+-magic commands\\
+-parallelization\\
+*denotes that this feature now also seems to be incorporated into standard python console\\
+\-\\
+\-\\
+\-\\
+-----Jupyter-----\\
+-notebooks allow code to be interspersed with prose (more sophisticated documentation; key for scientific reproducibility)
+-jupyter notebooks accessed through web browser; can be hosted either locally or remotely
+-nbconvert allows static versions to be created
+-nbviewer allows web hosting
+-Binder enables live sharing, virtual environment
+-prominent users (LIGO, biologists, geologists, comp. scientists)
+
+
+\end{document}
