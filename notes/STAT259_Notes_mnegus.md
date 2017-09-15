@@ -2,6 +2,7 @@
 
 ###### Dr. Fernando Perez
 
+
 ## 8/31/2017
 
 #### Cylcic Graph
@@ -52,6 +53,84 @@ Git uses the [sha1](https://en.wikipedia.org/wiki/SHA-1) hash function. This tak
 Solving the hash functions cryptographic scheme is called finding the "collision" of the hash function.
 
 \* Note: put `%%bash` at the start of a Jupyter notebook cell to execute in bash
+
+
+## 9/12/2017
+
+#### Reproducibility in Publication
+
+Top journals, in general, have no standard for reproducibility
+
+### IPython/Jupyter Notebook
+
+Python can have interactivity; can't access shell, often requires exact syntax.
+
+`Shift` `+` `Enter`: Run cell, move cursor to next cell  
+`Ctrl` `+` `Enter`: Run cell, keep cursor on current cell  
+`Alt` `+` `Enter`: Run cell, create new cell  
+
+Jupyter notebook offers good tab completion interface  
+Jupyter/IPython allow direct access to shell (precede expression with `!`)  
+Magic commands allow non-shell/non-python commands (*i.e.* `%timeit`)
+
+* `%` line magic (affects line until end)
+* `%%` cell magic (affects entire cell)
+* magic cells are syntax highlighted
+* `%%bash` executes cell in bash
+* `%%writefile` writes cell to file
+* `%lsmagic` shows existing magic commands
+* `%xmode` allows exception mode adjustments for error traceback display
+
+## 9/14/2017
+
+### Forward Compatibility
+
+* When running in Python 2, use
+ 
+	```
+	from __future__ import print_function
+	```
+
+	This will allow you to write `print` as the newer `print()` function.
+	
+	Similar behavior can be triggered for other functionality. Float division (for dividing integers) is not supported by Python 2. Instead use
+	
+	```
+	from __future__ import division
+	```
+* Python functions, classes, methods, etc. are objects, and so can be stored as variables.
+* Variable/object names are stored separately
+
+| Names | Objects |
+|-------|---------|
+|   x   |    10   |
+|   y   | [1,2,3] |
+|  var  | 'hello' |
+
+* Integers are immutable types
+* Lists are mutable types
+
+<<make ppt graphics of python pointer system>>
+
+### Python memory
+
+#### Reference counting
+
+Each object (stored in memory) has a reference assigned. This reference denotes how many pointers reference the object. An object is destroyed if it has a reference of zero (0 pointers reference it).
+
+*Quirk with integers: small integers always maintain a reference (it's computationally worth keeping them around all the time). Larger integers may not, and are created as needed.
+
+###### Angalogous to Git
+`gc -prune` cuts dangling branches that do not have pointer labels associated with them.
+
+**Note:** `numpy.dot()` can be replaced with `@` for matrix multiplication.
+
+
+
+
+
+
+
 
 
 
