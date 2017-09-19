@@ -125,6 +125,33 @@ Each object (stored in memory) has a reference assigned. This reference denotes 
 
 **Note:** `numpy.dot()` can be replaced with `@` for matrix multiplication.
 
+## 9/19/2017
+
+#### Challenges with Python
+* "You should be conversant at your need-level coding, and a tourist at one level lower."
+
+#### Useful Python packages 
+* Visualize Python, Ruby, Java, etc. (the `tutormagic` package)
+	
+	```
+	# In a Jupyter notebook
+	%load_ext tutormagic
+	--------< new cell >---------
+	%%tutor -l python3
+	```
+	(illustrates what python does under the hood)
+* the dis module lets you see the Python internal structure (bytecode)
+* XTensor allows you to use C++
+* Dask allows better parallel computing w/ Python
+	* Python has good support for MPI
+
+#### Flawed Peer review
+* Colombia (bonus for each paper published $\rightarrow$ rushed work, minimal publishing unit MPU)
+* S. Africa (advancement requires publications; put publication and impact factor in spreadsheet)
+
+* Use arXiv to stay on top of ML (other preprint services)
+	* incentive of getting publication credit
+	* introduces the problem of flag planting
 
 
 
