@@ -155,6 +155,17 @@ Each object (stored in memory) has a reference assigned. This reference denotes 
 
 
 
+## 9/21/2017
+* Use underscores in python numbers (i.e. `100_000_000`)
+* Python list comprehension (origin from set theory):  
+
+	$ S = \left\{x \text{ s.t. } x \text{ is even } \forall\, x \in N \right\} $
+	```
+	S = [x for x in N if x%2==0]
+	```
+
+
+
 
 
 
