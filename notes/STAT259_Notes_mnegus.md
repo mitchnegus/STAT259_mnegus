@@ -185,7 +185,11 @@ Each object (stored in memory) has a reference assigned. This reference denotes 
 
 
 
+## 10/10/2017
 
+### Stuart Geiger
+
+* "Study how we know what we know..."
 
 
 
