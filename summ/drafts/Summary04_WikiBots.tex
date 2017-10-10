@@ -1,0 +1,89 @@
+\documentclass{report}
+% PACKAGES %
+\usepackage[english]{} % Sets the language
+\usepackage[margin=2cm]{geometry} % Sets the margin size
+\usepackage{fancyhdr} % Allows creation of headers
+\usepackage{xcolor} % Allows the use of color in text
+\usepackage{float} % Allows figures and tables to be floats
+\usepackage{appendix}
+\usepackage{amsmath} % Enhanced math package prepared by the American Mathematical Society
+	\DeclareMathOperator{\sech}{sech} % Include sech
+\usepackage{amssymb} % AMS symbols package
+\usepackage{mathrsfs}% More math symbols
+\usepackage{bm} % Allows you to use \bm{} to make any symbol bold
+\usepackage{bbold} % Allows more bold characters
+\usepackage{verbatim} % Allows you to include code snippets
+\usepackage{setspace} % Allows you to change the spacing between lines at different points in the document
+\usepackage{parskip} % Allows you alter the spacing between paragraphs
+\usepackage{multicol} % Allows text division into multiple columns
+\usepackage{units} % Allows fractions to be expressed diagonally instead of vertically
+\usepackage{booktabs,multirow,multirow} % Gives extra table functionality
+\usepackage{hyperref} % Allows hyperlinks in the document
+\usepackage{rotating} % Allows tables to be rotated
+\usepackage{graphicx} % Enhanced package for including graphics/figures
+	% Set path to figure image files
+	%\graphicspath{ } }
+\usepackage{listings} % for including text files
+	\lstset{basicstyle=\ttfamily\scriptsize,
+        		  keywordstyle=\color{blue}\ttfamily,
+        	  	  stringstyle=\color{red}\ttfamily,
+          	  commentstyle=\color{gray}\ttfamily,
+          	 }		
+\newcommand{\tab}{\-\hspace{1cm}}
+
+% Create a header w/ Name & Date
+\pagestyle{fancy}
+\rhead{\textbf{Mitch Negus} \; 10/9/2017}
+
+\begin{document}
+\thispagestyle{empty}
+\sffamily
+
+\large {STAT259 Summary {4} \hfill Mitch Negus\\
+		\hspace*{\fill} 10/9/2017\\ }
+\section*{\textsf{Operationalizing Conflict and Cooperation between Automated Software Agents in Wikipedia: A Replication and Expansion of “Even Good Bots Fight” \\ \normalsize Geiger, S. and Halfaker, A.}}
+
+\textbf{Summary}\\
+\tab The article by Geiger and Halfaker provides an insightful view into how automated processes operate on large, community-driven projects, while simultaneously defending the use of bots against criticisms that these bots are initiating conflicts and "fighting" in their efforts to improve the encyclopedia. Geiger and Halfaker show however that what had previously been published as bot conflicts are actually, more often than not, bots collaborating or fulfilling their intended purpose after human editors introduce changes (often merited or policy-driven) introducing inconsistencies in the underlying Wikipedia page frameworks. With a cursory overview, these changes may often appear to be conflicts between bots. In reality, they are simply purposeful reverts. Examples of these reverts include double redirects and interwiki links between languages. And, while the article suggests that the vast majority of all reverts (previously interpreted as conflicts) are not truly fights, but simple corrections often weeks, months, or years later than the original bot change, many instances of bots continuously reverting each other occur when two bots both work together collaboratively. An in-depth anecdotal example of this situation is described in the article, where two bots fixing article redirects after human led policy updates appear to continuously revert each other's changes.
+
+\-\\
+\textbf{Exploration}\\
+\tab I thoroughly appreciated a subtle point that the authors made late in the article about how bots are not so much individual entities as they are augmentations of a single user. I think this is a concept that is often overlooked in coding. While often codes appear to act autonomously, they are always (so far) the product of a human, and therefore reflect human preferences, limitations, biases, and idiosyncracies. This can be both good or bad--in this article we see the good, in that bots do not make fully autonomous changes to Wikipedia, but rather make user-specified changes on a vast scale. If a problem is identified, the bot may be blocked, and the creator is expected to (and often gladly does) update the bot to comply with the expectations of the Wikipedia community.\\
+\tab On an entirely different note, I was encouraged by the use of a second-person perspective in writing this article. Most scientific articles are written passively in the third person, or what the authors of this article describe as the "view from nowhere". While the motivation for this practice is understandable--science ought to be unbiased, and a third person passive perspective presents an account where the fallible scientist has been removed from the experiment--it is less accessible to a general audience and it neglects the human side of research. I, at least, found this article very easy to comprehend and quite interesting, even given my very limited knowledge of Wikipedia rules and practices. The graphics and anecdotes allowed me to gain a comprehensive understanding of the types of situations the authors were describing. I also believe that it is important to recognize that science is done by humans, and so is by it's very nature going to be imperfect. Rather than hiding this fact, it should be acknowledged, and every effort should be provided to supply all parties with as much transparency as possible into the methods used by the study. I wish more scientific papers would follow the model set by this paper in that regard. 
+
+\newpage
+
+\textbf{Notes}\\
+
+-----Wikipedia Bots-----\\
+- Wikipedia relies onf Bot Approvals Groups (BAG) to determine when bots should be used \\
+- Similar decision process as when contentious edits are made (should involve some discussion) \\
+- Bots are not allowed without consultation, require approval from BAG \\
+- Wikipedia admin can block bots if found to violate approval scope \\
+- conflict vs. non-conflict identified in reverts (2 metrics: time to revert, reverts per pair of bots per page) \\
+- determined bots changing interwiki links/redirects appeared much more commonly in reverts \\
+- conflicts arise much more quickly (in conflict, a revert after 5 minutes is more likely than a revert 5 years later); could arise due to Wikipedia policy consensus \\
+- many reverts indicate bot-bot conflict; single reverts indicate routine changes to policies \\
+- 93.2\% of reverts were not responded to by original bot \\
+- only 1.46\% of reverts involved exchanges of more than 2 reverts \\
+- bot-bot reverts don't necessarily account for human changes in meantime (esp. w/ redirects)
+- anecdote about collaborative nature of DarknessBot and Xqbot (both handling human user introduced policy based reverts) \\
+- Often, it is not the bots that are conflicting, but bots programmed with conflicting user preferences (perhaps at different policy "timeshots") \\
+- Bot-bot reverts are collaboration on process pages \\
+- Bot-bot conflicts do exist: two working examples of how to get things done; one updated on time basis, one fixes the format $\rightarrow$ repeats cyclically \\
+- bots as an extension of a user (artificial augmentation) rather than autonomous agents (artificial intelligence) is important distinction \\
+
+\-\\
+\-\\
+\-\\
+-----Personal Commentary-----\\
+- I like the perspective ("second person voice", reflect on our positionality, not a third person "view from nowhere") \\
+- Plots are well described and fit reading \\
+- bots as an extension of a user (artificial augmentation) rather than autonomous agents (artificial intelligence) is important distinction \\
+
+
+
+
+
+
+\end{document}
