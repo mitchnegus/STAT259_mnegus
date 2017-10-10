@@ -3,6 +3,7 @@
 ###### Dr. Fernando Perez
 
 
+
 ## 8/31/2017
 
 #### Cylcic Graph
@@ -81,6 +82,8 @@ Magic commands allow non-shell/non-python commands (*i.e.* `%timeit`)
 * `%lsmagic` shows existing magic commands
 * `%xmode` allows exception mode adjustments for error traceback display
 
+
+
 ## 9/14/2017
 
 ### Forward Compatibility
@@ -125,6 +128,8 @@ Each object (stored in memory) has a reference assigned. This reference denotes 
 
 **Note:** `numpy.dot()` can be replaced with `@` for matrix multiplication.
 
+
+
 ## 9/19/2017
 
 #### Challenges with Python
@@ -156,6 +161,7 @@ Each object (stored in memory) has a reference assigned. This reference denotes 
 
 
 ## 9/21/2017
+
 * Use underscores in python numbers (i.e. `100_000_000`)
 * Python list comprehension (origin from set theory):  
 
@@ -165,6 +171,17 @@ Each object (stored in memory) has a reference assigned. This reference denotes 
 	```
 
 
+## 9/28/2017
+
+* Avoid use of `from module import *` whenever possible (unless doing "quick-and-dirty" math on the command line); it may lead to importing a function/class which overwrites existing functionality (i.e. numpy.sum would overwrite builtin sum function)
+* module `tempfile` for creating/managing temporary files
+* conda allows installation management across languages (python virtualenv is _only_ Python)
+
+
+
+## 10/3/2017
+
+* Use ghp-import for easier push to GitHub-pages
 
 
 
