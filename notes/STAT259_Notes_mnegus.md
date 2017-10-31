@@ -193,5 +193,12 @@ Each object (stored in memory) has a reference assigned. This reference denotes 
 
 
 
+## 10/19/2017
+
+* use `plt.subplots` to return figure,axes objects
+	* `fig` = plt.figure()), then set axes objects is not preffered
+* use IPython display module
+* use `plt.close()` to suppress double output
+
 
 
