@@ -1,0 +1,66 @@
+\documentclass{report}
+% PACKAGES %
+\usepackage[english]{} % Sets the language
+\usepackage[margin=2cm]{geometry} % Sets the margin size
+\usepackage{fancyhdr} % Allows creation of headers
+\usepackage{xcolor} % Allows the use of color in text
+\usepackage{float} % Allows figures and tables to be floats
+\usepackage{appendix}
+\usepackage{amsmath} % Enhanced math package prepared by the American Mathematical Society
+	\DeclareMathOperator{\sech}{sech} % Include sech
+\usepackage{amssymb} % AMS symbols package
+\usepackage{mathrsfs}% More math symbols
+\usepackage{bm} % Allows you to use \bm{} to make any symbol bold
+\usepackage{bbold} % Allows more bold characters
+\usepackage{verbatim} % Allows you to include code snippets
+\usepackage{setspace} % Allows you to change the spacing between lines at different points in the document
+\usepackage{parskip} % Allows you alter the spacing between paragraphs
+\usepackage{multicol} % Allows text division into multiple columns
+\usepackage{units} % Allows fractions to be expressed diagonally instead of vertically
+\usepackage{booktabs,multirow,multirow} % Gives extra table functionality
+\usepackage{hyperref} % Allows hyperlinks in the document
+\usepackage{rotating} % Allows tables to be rotated
+\usepackage{graphicx} % Enhanced package for including graphics/figures
+	% Set path to figure image files
+	%\graphicspath{ } }
+\usepackage{listings} % for including text files
+	\lstset{basicstyle=\ttfamily\scriptsize,
+        		  keywordstyle=\color{blue}\ttfamily,
+        	  	  stringstyle=\color{red}\ttfamily,
+          	  commentstyle=\color{gray}\ttfamily,
+          	 }		
+\newcommand{\tab}{\-\hspace{1cm}}
+
+% Create a header w/ Name & Date
+\pagestyle{fancy}
+\rhead{\textbf{Mitch Negus} \; 10/9/2017}
+
+\begin{document}
+\thispagestyle{empty}
+\sffamily
+
+\large {STAT259 Summary {5} \hfill Mitch Negus\\
+		\hspace*{\fill} 10/30/2017\\ }
+\section*{\textsf{Reproducible and Replicable Computational Fluid Dynamics: It's Harder Than You Think \\ \normalsize Mesnard, O. and Barba, L.A.}}
+
+\textbf{Summary}\\
+\tab Talking about scientific reproducibility is great, but it is only of real value if it is put into practice. This article from authors at the George Washington University discusses how even with fairly strict adherence to reproducible research best-practices, making research truly reproducible is still challenging. Some of the most notable hurdles that the authors encountered in their attempts for reproducibility included maintaining their own codes to stand up over time, reconciling subtle but significant differences in nominally similar external libraries, and even making the decision of whether to use existing open source projects versus a home-grown code. Some more recent developments in the field of reproducible research (like Docker containers and virtual environments) allow code upkeep to be simplified, but others--like identifying the differences between the fundamentals of linear algebra libraries or deciding if an existing open-source program will actually save users once one considers how long it will take to become sufficiently proficient with that program in-question--are still quite challenging.
+
+\-\\
+\textbf{Exploration}\\
+\tab This paper provided an excellent window into the mind of a scientific researcher. I appreciated the authors' thorough coverage of their scientific methods, even including their difficulties and failures during their scientific process. I believe this more wholesome approach to scientific communication is lacking from the community in general. That being said, I also feel that the authors could have been more effective when writing with consideration to their audience. The paper's message seems to be aimed at researchers in general due to it's emphasis on reproducibility (not strictly the findings of the GW work on CFD for flying snakes), but was somewhat technical for an outsider to the CFD field. I think it might have been more beneficial for the authors to provide a slightly more accessible presentation of their results. As even the article alludes during it's discussion of documentation, effective communication is as critical as providing reproducible code and methods.  \\
+
+
+\newpage
+
+\textbf{Notes}\\
+
+-----CFD-----\\
+-
+
+
+
+
+
+
+\end{document}
