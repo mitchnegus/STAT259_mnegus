@@ -1,0 +1,53 @@
+\documentclass{report}
+% PACKAGES %
+\usepackage[english]{} % Sets the language
+\usepackage[margin=2cm]{geometry} % Sets the margin size
+\usepackage{fancyhdr} % Allows creation of headers
+\usepackage{xcolor} % Allows the use of color in text
+\usepackage{float} % Allows figures and tables to be floats
+\usepackage{appendix}
+\usepackage{amsmath} % Enhanced math package prepared by the American Mathematical Society
+	\DeclareMathOperator{\sech}{sech} % Include sech
+\usepackage{amssymb} % AMS symbols package
+\usepackage{mathrsfs}% More math symbols
+\usepackage{bm} % Allows you to use \bm{} to make any symbol bold
+\usepackage{bbold} % Allows more bold characters
+\usepackage{verbatim} % Allows you to include code snippets
+\usepackage{setspace} % Allows you to change the spacing between lines at different points in the document
+\usepackage{parskip} % Allows you alter the spacing between paragraphs
+\usepackage{multicol} % Allows text division into multiple columns
+\usepackage{units} % Allows fractions to be expressed diagonally instead of vertically
+\usepackage{booktabs,multirow,multirow} % Gives extra table functionality
+\usepackage{hyperref} % Allows hyperlinks in the document
+\usepackage{rotating} % Allows tables to be rotated
+\usepackage{graphicx} % Enhanced package for including graphics/figures
+	% Set path to figure image files
+	%\graphicspath{ } }
+\usepackage{listings} % for including text files
+	\lstset{basicstyle=\ttfamily\scriptsize,
+        		  keywordstyle=\color{blue}\ttfamily,
+        	  	  stringstyle=\color{red}\ttfamily,
+          	  commentstyle=\color{gray}\ttfamily,
+          	 }		
+\newcommand{\tab}{\-\hspace{1cm}}
+
+% Create a header w/ Name & Date
+\pagestyle{fancy}
+\rhead{\textbf{Mitch Negus} \; 11/20/2017}
+
+\begin{document}
+\thispagestyle{empty}
+\sffamily
+
+\large {STAT259 Summary {7} \hfill Mitch Negus\\
+		\hspace*{\fill} 11/20/2017\\ }
+\section*{\textsf{MPL Colormaps \\ \normalsize Smith, N. and van der Walt, S.}}
+
+\textbf{Summary}\\
+\tab This weeks reading (and video) related to matplotlib's shift from the default jet colormap to using viridis. Viridis was selected based on science for determining colormaps with little-to-no perceptual variation across the colormap. This is in contrast with colormaps with strong perceptual variation, such as jet, which seem visibly harsh and are scientifically misleading. In the video, Nathaniel Smith discusses the science behind how viridis was chosen as the default after analysis of the color space, trials with a variety of criteria matching colormaps, and (partially) democratic polling of matplotlib users/developers.
+
+\-\\
+\textbf{Exploration}\\
+\tab I have to say, I am very pleased by this "reading" selection. I had noticed the viridis color scheme when using matplotlib's plotting (especially using `imshow`) and thought it was an interesting, and peculiar, color choice. I thought that Nathaniel's video did an excellent job explaining how they reached this decision, with enough background to be fairly accessible to most users. I also really appreciate the scientific process behind the decision to switch to viridis. I remember the discussion earlier in the semester about how the jet colormap could be misleading, but certainly did not have a full appreciation as to why until this assignment. Seeing the plots of perceptual variation in jet versus virdis made this quite obvious. 
+
+\end{document}

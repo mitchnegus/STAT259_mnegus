@@ -1,0 +1,57 @@
+\documentclass{report}
+% PACKAGES %
+\usepackage[english]{} % Sets the language
+\usepackage[margin=2cm]{geometry} % Sets the margin size
+\usepackage{fancyhdr} % Allows creation of headers
+\usepackage{xcolor} % Allows the use of color in text
+\usepackage{float} % Allows figures and tables to be floats
+\usepackage{appendix}
+\usepackage{amsmath} % Enhanced math package prepared by the American Mathematical Society
+	\DeclareMathOperator{\sech}{sech} % Include sech
+\usepackage{amssymb} % AMS symbols package
+\usepackage{mathrsfs}% More math symbols
+\usepackage{bm} % Allows you to use \bm{} to make any symbol bold
+\usepackage{bbold} % Allows more bold characters
+\usepackage{verbatim} % Allows you to include code snippets
+\usepackage{setspace} % Allows you to change the spacing between lines at different points in the document
+\usepackage{parskip} % Allows you alter the spacing between paragraphs
+\usepackage{multicol} % Allows text division into multiple columns
+\usepackage{units} % Allows fractions to be expressed diagonally instead of vertically
+\usepackage{booktabs,multirow,multirow} % Gives extra table functionality
+\usepackage{hyperref} % Allows hyperlinks in the document
+\usepackage{rotating} % Allows tables to be rotated
+\usepackage{graphicx} % Enhanced package for including graphics/figures
+	% Set path to figure image files
+	%\graphicspath{ } }
+\usepackage{listings} % for including text files
+	\lstset{basicstyle=\ttfamily\scriptsize,
+        		  keywordstyle=\color{blue}\ttfamily,
+        	  	  stringstyle=\color{red}\ttfamily,
+          	  commentstyle=\color{gray}\ttfamily,
+          	 }		
+\newcommand{\tab}{\-\hspace{1cm}}
+
+% Create a header w/ Name & Date
+\pagestyle{fancy}
+\rhead{\textbf{Mitch Negus} \; 11/13/2017}
+
+\begin{document}
+\thispagestyle{empty}
+\sffamily
+
+\large {STAT259 Summary {6} \hfill Mitch Negus\\
+		\hspace*{\fill} 11/13/2017\\ }
+\section*{\textsf{The ASA's Statement on p-Values: Context, Process, and Purpose \\ \normalsize Wasserstein, R.L. and Lazar, N.A.}}
+
+\textbf{Summary}\\
+\tab The readings this week focus on p-values, exploring how despite becoming the standard for proving significance in many scientific fields and publications, they are also frequently misinterpreted and not a perfect metric. As scientists look for more concrete ways to evaluate scientific studies and stand out from the wide variety of other scientific studies being conducted in a field, the p-value has emerged as the primary measurement statistic. The article by the ASA however highlights six principles that must be kept in mind when reporting and evaluating p-values. While these principles may seem somewhat obvious when given a rigorous definition of a p-value, they can often be neglected or overlooked by non-statisticians, resulting in the abuse of the p-value as a measurement tool for statistical significance. While the ASA statement represents a compromise between many statisticians to speak for the society, many of the individual authors present their own, sometimes conflicting, opinions in separate commentaries. For some authors, their disagreement arises with the tone of the article (Benjamini thought the ASA statement was too discouraging against using p-values). For others, they disagreed with the content and focus (Stark thought the ASA statement was not properly aimed at general scientists and non-statisticians.)
+
+\-\\
+\textbf{Exploration}\\
+\tab I thoroughly appreciate the ASA's statement, although I unfortunately feel like it may be too little coming from the wrong place. With increasing pressure to produce science en masse, what some consider the industrialization of science, journals and the scientists who publish in them will increasingly look for concrete, quick, and efficient means of determining whether or not a study is statistically significant (I see a similar trend in education, where standardized testing is becoming a norm, for better or worse). Unfortunately, I don't think the ASA will be able to change the practice of p-value abuse by itself. I believe that this change must arise organically from within the scientific disciplines which rely on p-values to determine statistical significance. This change must include scientists being thoroughly educated about what a p-value really is, and what it is not. Unfortunately, this learning and deep understanding is something that I believe will be a casualty in the hunt for more and more results. At the same time, understanding the reasons for why you do something as a scientist is essential for the scientific method to be successful.
+
+\tab On a separate note, I thoroughly appreciated Stark's article for its general language. As someone outside the field of statistics, I thought his simpler descriptions of p-values were incredibly useful for grasping the more fundamental concept of what a p-value actually signified.  \\
+
+
+
+\end{document}

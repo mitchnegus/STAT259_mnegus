@@ -1,0 +1,62 @@
+\documentclass{report}
+% PACKAGES %
+\usepackage[english]{} % Sets the language
+\usepackage[margin=2cm]{geometry} % Sets the margin size
+\usepackage{fancyhdr} % Allows creation of headers
+\usepackage{xcolor} % Allows the use of color in text
+\usepackage{float} % Allows figures and tables to be floats
+\usepackage{appendix}
+\usepackage{amsmath} % Enhanced math package prepared by the American Mathematical Society
+	\DeclareMathOperator{\sech}{sech} % Include sech
+\usepackage{amssymb} % AMS symbols package
+\usepackage{mathrsfs}% More math symbols
+\usepackage{bm} % Allows you to use \bm{} to make any symbol bold
+\usepackage{bbold} % Allows more bold characters
+\usepackage{verbatim} % Allows you to include code snippets
+\usepackage{setspace} % Allows you to change the spacing between lines at different points in the document
+\usepackage{parskip} % Allows you alter the spacing between paragraphs
+\usepackage{multicol} % Allows text division into multiple columns
+\usepackage{units} % Allows fractions to be expressed diagonally instead of vertically
+\usepackage{booktabs,multirow,multirow} % Gives extra table functionality
+\usepackage{hyperref} % Allows hyperlinks in the document
+\usepackage{rotating} % Allows tables to be rotated
+\usepackage{graphicx} % Enhanced package for including graphics/figures
+	% Set path to figure image files
+	%\graphicspath{ } }
+\usepackage{listings} % for including text files
+	\lstset{basicstyle=\ttfamily\scriptsize,
+        		  keywordstyle=\color{blue}\ttfamily,
+        	  	  stringstyle=\color{red}\ttfamily,
+          	  commentstyle=\color{gray}\ttfamily,
+          	 }		
+\newcommand{\tab}{\-\hspace{1cm}}
+
+% Create a header w/ Name & Date
+\pagestyle{fancy}
+\rhead{\textbf{Mitch Negus} \; 11/27/2017}
+
+\begin{document}
+\thispagestyle{empty}
+\sffamily
+
+\large {STAT259 Summary {8} \hfill Mitch Negus\\
+		\hspace*{\fill} 11/27/2017\\ }
+\section*{\textsf{Does High Public Debt Consistently Stifle Economic
+Growth?  A Critique of Reinhart and Rogoff \\ \normalsize Herndon, T., Ash, M. and Pollin, R.}}
+
+\textbf{Summary}\\
+\tab The article from the researchers at the University of Massachusetts Political Economy Research Institute analyzes, replicates, and criticizes a study performed by Harvard University Economists Reinhart and Rogoff. The original paper makes a case that advanced countries with more a ratio of public debt to GDP of more than 90\% tend to see significantly less GDP growth than countries with less public debt. The follow-up from the UMass team found that the original study used an unconventional statistical weighting scheme, neglected to incorporate some data in the original analysis, and made some coding calculation errors when averaging statistics. When the errors were corrected, all values included and a more conventional weighting scheme applied, the UMass team found that the trend on GDP change was not as dramatic as originally stated. In fact, the change was significant enough to call into question the wide variety of policy decisions that had been made on the assumption that the original, and somewhat staggering, initial result.
+
+\-\\
+\textbf{Exploration}\\
+\tab I thought the article was particularly interesting, as I completed my undergraduate degree at UMass when this replication occurred, and this result was a featured headline on campus. At the time, however, I did not look into exactly how the study occurred, and I did not appreciate the finer details of the replication. I felt that the replication paper was very effective at describing the original publication, it's findings and explaining where they went wrong (I never felt like I needed to consult the original paper while reading the critique). At the same time, I think the response could have been made more concise. In an effort to highlight some of the effects of the original study's errors, it seemed like the response watered down some of its own arguments by belaboring some points excessively. I also wish that there had been more discussion of some of the original authors' choices (if possible). For instance, in one of the supplementary pieces, the authors' argument was presented that some data was neglected because it was unavailable at the time of original publication. This was not discussed in the original paper, it was just noticed that no data was missing. This seemed very dubious to me as a reader, and immediately skeptical of the original author's intentions. If the authors' claim is correct though, there is no sinister motive. Since there was no discussion of this any further in the paper other than that the data was simply ommitted, a completely unacceptable statistical decision if not explained, I was left somewhat skeptical of both parties. \\
+
+
+\newpage
+
+
+
+
+
+
+\end{document}
