@@ -202,3 +202,41 @@ Each object (stored in memory) has a reference assigned. This reference denotes 
 
 
 
+## 11/21/2017
+
+#### Testing
+* unit tests designed to test unit features
+* regression tests added to avoid duplicate bugsv
+* use `pytest --pdf tests.py` to debug
+* selectively debug a single test in `tests.py` using `pytest --pdf tests.py::specific_test`
+
+#### Testing in a Jupyter notebook
+* python builtin `unittest`
+
+	```
+	import unittest
+	
+	---
+	
+	class MyTests(unittest.TestCase):
+		def test_function(self):
+			"Test some function"
+			self.assertEqual(....)
+	
+	---		
+	
+	unittest.main(argv=['foo'], exit=False, verbosity=2)
+	```
+	
+^^ See `unittest` documentation
+
+
+###### Questions
+* Use testing w/ input data? Should you fabricate data? For each unit test? A shared test dataset (then it’s not really a “unit test”)
+	* Try "mock"
+	* Create a static subset of large dataset
+	* Access small subset of large dataset
+* Visual tests? For plots?
+	* see documentation for matplotlib testing
+	* Google "matplotlib mock" or "matplotlib testing" for help (in matplotlib documentation)
+
