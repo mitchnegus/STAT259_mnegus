@@ -240,3 +240,8 @@ Each object (stored in memory) has a reference assigned. This reference denotes 
 	* see documentation for matplotlib testing
 	* Google "matplotlib mock" or "matplotlib testing" for help (in matplotlib documentation)
 
+## 11/28/2017
+`.DS_Store` for Mac spotlight
+
+## 11/30/2017
+"Brain surgery with boxing gloves." aka my research project...
